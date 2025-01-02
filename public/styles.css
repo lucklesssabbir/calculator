@@ -1,0 +1,166 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+}
+
+.calculator {
+  height: 90vh;
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  border-radius: 12px;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px;
+}
+
+#history-btn {
+  width: max-content;
+  margin-left: 80%;
+  background: #fff;
+  color: #2196f3;
+  border: none;
+  padding: 8px 16px;
+  font-size: 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: background 0.3s;
+}
+
+#history-btn:hover {
+  background: #e3f2fd;
+}
+
+.display {
+  padding: 20px;
+  background-color: #e0e0e0;
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#expression {
+  font-size: 18px;
+  color: #666;
+  min-height: 24px;
+  text-align: right;
+}
+
+#result {
+  font-size: 48px;
+  color: #000;
+  min-height: 48px;
+  text-align: right;
+}
+
+.keys {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.keys button {
+  width: 25%;
+  padding: 24px 0;
+  font-size: 24px;
+  border: solid 1px #e0e0e0;
+  background-color: #fff;
+  box-shadow: inset 0 -4px 0 rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.keys button:hover {
+  box-shadow: inset 0 4px 0 rgba(0, 0, 0, 0.1);
+  background-color: #2196f3;
+}
+
+.keys button:nth-child(4n),
+.keys button:last-child {
+  background-color: #ff9800;
+  color: #fff;
+}
+
+.keys button:nth-child(4n):hover,
+.keys button:last-child:hover {
+  background-color: #fa0087;
+}
+
+/******************************
+ history page
+**************************/
+
+.container {
+  background-color: #fff;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+}
+
+.container h1 {
+  margin-bottom: 20px;
+  font-size: 2em;
+  color: #333;
+}
+
+.history-list {
+  text-align: left;
+  margin: 20px 0;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #fafafa;
+}
+
+.history-list div {
+  padding: 12px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.history-list div:last-child {
+  border-bottom: none;
+}
+
+.history-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.history-actions button {
+  padding: 12px 24px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+#export-history {
+  background-color: #2196f3;
+  color: white;
+}
+
+#export-history:hover {
+  background-color: #1976d2;
+}
+
+#clear-history {
+  background-color: #f44336;
+  color: white;
+}
+
+#clear-history:hover {
+  background-color: #d32f2f;
+}
